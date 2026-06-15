@@ -12,15 +12,14 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">CreativeVanam</div>
+                <a href="index.html" class="logo">CreativeVanam</a>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="booking.html">Book Session</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <button class="btn btn-primary">Book Free Consultation</button>
+                <a href="booking.html" class="btn btn-primary">Book Free Consultation</a>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -33,189 +32,226 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content">
-                <span class="hero-tag">OUR STORY</span>
-                <h1 class="hero-title">Crafting digital experiences that <span class="accent">grow</span> <span class="accent">businesses</span>.</h1>
-                <p class="hero-description">We are a team of visionary designers and strategic developers dedicated to bridging the gap between bold ideas and impactful reality.</p>
-                <button class="btn btn-primary">Get Started</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section class="mission" id="about">
-        <div class="container">
-            <div class="mission-grid">
-                <div class="mission-image">
-                    <svg class="isometric-laptop" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Screen -->
-                        <path d="M100 80 L300 80 L320 140 L80 140 Z" fill="#0ea5e9" stroke="#22c55e" stroke-width="2"/>
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-tag">OUR STORY</span>
+                    <h1 class="hero-title">We Design Websites That <span class="accent">Grow</span> Your Business</h1>
+                    <p class="hero-description">Website Design, UX/UX Design, Branding, and Website Redesign for startups, businesses, and personal brands.</p>
+                    <div class="hero-buttons">
+                        <a href="booking.html" class="btn btn-primary">Book Free Consultation</a>
+                        <a href="services.html" class="btn btn-secondary">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <svg class="dashboard-graphic" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Monitor -->
+                        <rect x="50" y="40" width="300" height="220" fill="#0ea5e9" stroke="#22c55e" stroke-width="2" rx="10"/>
                         
-                        <!-- Screen glow -->
-                        <ellipse cx="200" cy="110" rx="100" ry="30" fill="#22c55e" opacity="0.2" />
-
-                        <!-- Screen content lines -->
-                        <line x1="110" y1="95" x2="290" y2="95" stroke="#22c55e" stroke-width="1" opacity="0.5" />
-                        <line x1="110" y1="105" x2="290" y2="105" stroke="#22c55e" stroke-width="1" opacity="0.3" />
-                        <line x1="110" y1="115" x2="290" y2="115" stroke="#22c55e" stroke-width="1" opacity="0.3" />
-                        <line x1="110" y1="125" x2="230" y2="125" stroke="#22c55e" stroke-width="1" opacity="0.3" />
-
-                        <!-- Keyboard -->
-                        <rect x="90" y="140" width="220" height="120" fill="#1e293b" stroke="#22c55e" stroke-width="2" />
+                        <!-- Screen content -->
+                        <rect x="60" y="50" width="280" height="180" fill="#1a1f35" rx="5"/>
                         
-                        <!-- Keyboard keys -->
-                        <rect x="100" y="155" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-                        <rect x="150" y="155" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-                        <rect x="200" y="155" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-                        <rect x="250" y="155" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
+                        <!-- Chart lines -->
+                        <line x1="70" y1="120" x2="370" y2="120" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
+                        <line x1="70" y1="140" x2="370" y2="140" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
+                        <line x1="70" y1="160" x2="370" y2="160" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
                         
-                        <rect x="100" y="190" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-                        <rect x="150" y="190" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-                        <rect x="200" y="190" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-                        <rect x="250" y="190" width="40" height="25" fill="#0f172a" stroke="#22c55e" stroke-width="1" opacity="0.6" />
-
-                        <!-- Base/Stand Left -->
-                        <path d="M85 260 L100 140 L115 260 Z" fill="#334155" stroke="#22c55e" stroke-width="2" />
-
-                        <!-- Base/Stand Right -->
-                        <path d="M315 260 L300 140 L285 260 Z" fill="#334155" stroke="#22c55e" stroke-width="2" />
-
-                        <!-- Bottom Stand -->
-                        <ellipse cx="200" cy="265" rx="120" ry="30" fill="#1e293b" stroke="#22c55e" stroke-width="2" />
-                        <ellipse cx="200" cy="260" rx="120" ry="30" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3" />
-
-                        <!-- Glow effects -->
-                        <circle cx="200" cy="110" r="150" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.1" />
-                        <circle cx="200" cy="110" r="130" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.15" />
+                        <!-- Bars -->
+                        <rect x="80" y="140" width="20" height="40" fill="#22c55e" opacity="0.8"/>
+                        <rect x="110" y="125" width="20" height="55" fill="#22c55e" opacity="0.8"/>
+                        <rect x="140" y="110" width="20" height="70" fill="#22c55e" opacity="0.8"/>
+                        <rect x="170" y="135" width="20" height="45" fill="#22c55e" opacity="0.8"/>
+                        <rect x="200" y="120" width="20" height="60" fill="#22c55e" opacity="0.8"/>
+                        
+                        <!-- Pie chart -->
+                        <circle cx="280" cy="130" r="25" fill="#22c55e" opacity="0.7"/>
+                        <circle cx="280" cy="130" r="25" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+                        
+                        <!-- Monitor stand -->
+                        <rect x="140" y="270" width="120" height="10" fill="#334155" stroke="#22c55e" stroke-width="2"/>
+                        <rect x="175" y="280" width="50" height="40" fill="#334155" stroke="#22c55e" stroke-width="2"/>
+                        
+                        <!-- Glow -->
+                        <circle cx="200" cy="150" r="180" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.1"/>
                     </svg>
                 </div>
-                <div class="mission-content">
-                    <h2>Our Mission</h2>
-                    <p>At CreativeVanam, we believe that design isn't just about aesthetics—it's about results. Our mission is to empower ambitious brands with the digital tools that solve complex problems and unlock new avenues for growth.</p>
-                    
-                    <div class="mission-items">
-                        <div class="mission-item">
-                            <div class="icon-circle">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div>
-                                <h3>Precision Execution</h3>
-                                <p>We don't just dream, we build. Every pixel is placed with intention and optimized for results.</p>
-                            </div>
-                        </div>
-                        <div class="mission-item">
-                            <div class="icon-circle">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div>
-                                <h3>Growth Focused</h3>
-                                <p>Your ROI is our primary metric. We design for conversion and scalability.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Why We Do It Section -->
-    <section class="why-section">
+    <!-- Why Choose Section -->
+    <section class="why-choose">
         <div class="container">
-            <div class="why-header">
-                <h2>Why We Do It</h2>
-                <p>We are driven by the challenge of the unknown. In a world saturated with digital sameness, we are rebels on a quest.</p>
-            </div>
-
-            <div class="why-vision">
-                <h3>The Vision</h3>
-                <p>"To become the global standard for human-centric technology that meets human intuition."</p>
-            </div>
-
+            <h2>Why Choose CreativeVanam?</h2>
             <div class="why-grid">
-                <div class="why-card">
+                <div class="why-item">
                     <div class="why-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-paint-brush"></i>
                     </div>
-                    <h3>Innovation as Standard</h3>
-                    <p>We don't just follow trends—we're experimenting with emerging tech to keep you ahead of the curve.</p>
+                    <h3>Modern Design</h3>
+                    <p>Fresh, modern designs that capture attention and engage your audience.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-item">
                     <div class="why-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Unwavering Partnership</h3>
-                    <p>Your success is ours. Our most successful projects are built on radical transparency and collaboration.</p>
+                    <h3>Mobile Friendly</h3>
+                    <p>Seamless experiences across all devices from mobile to large desktop screens.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-item">
                     <div class="why-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Ethical Tech</h3>
-                    <p>We build digital products that respect user privacy and promote sustainable business practices.</p>
+                    <h3>Fast Delivery</h3>
+                    <p>Rapid turnaround without compromising quality. Launch in record time.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-item">
                     <div class="why-icon">
-                        <i class="fas fa-gem"></i>
+                        <i class="fas fa-search"></i>
                     </div>
-                    <h3>Obsessive Quality</h3>
-                    <p>Our QA process is forensic. If it isn't perfect, quality is non-negotiable.</p>
+                    <h3>SEO Ready</h3>
+                    <p>Optimized for search engines to ensure your site ranks high for customers.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>We're here to support and maintain your website long-term.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
+    <!-- Process Section -->
+    <section class="process" style="background: var(--dark-secondary);">
         <div class="container">
-            <h2>The Minds Behind Vanam</h2>
-            <p>A collective of strategists, pixel-pushers, and code poets.</p>
+            <h2>Our Streamlined Process</h2>
+            <p class="section-subtitle">From first handshake to final launch, we've perfected the journey of building world-class websites.</p>
             
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-image">
-                        <div class="placeholder-image">PG</div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-phone"></i>
                     </div>
-                    <h3>Pranesh G</h3>
-                    <p>Strategy & Design</p>
+                    <h3>STEP 1</h3>
+                    <p>Book a Call</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <div class="placeholder-image">SM</div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <h3>Siddarth M</h3>
-                    <p>Creative Direction</p>
+                    <h3>STEP 2</h3>
+                    <p>Discuss Reqs</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>STEP 3</h3>
+                    <p>Get Proposal</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-pen-ruler"></i>
+                    </div>
+                    <h3>STEP 4</h3>
+                    <p>Design & Dev</p>
+                </div>
+                <div class="process-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="process-step active">
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>STEP 5</h3>
+                    <p>Launch</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Section -->
-    <section class="trust">
+    <!-- Services Preview Section -->
+    <section class="services-preview">
         <div class="container">
-            <h2>Why Businesses Trust Us</h2>
-            <p>The CreativeVanam advantage is built on three core pillars of excellence.</p>
-            
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <div class="trust-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <h3>Bespoke Strategies</h3>
-                    <p>We don't do templates. Every client receives a custom-engineered roadmap designed for their industry.</p>
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image" style="background: linear-gradient(135deg, #0ea5e9 0%, #22c55e 100%);"></div>
+                    <h3>Website Design</h3>
+                    <p>High-performance websites designed to convert visitors into loyal customers.</p>
+                    <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="trust-card">
-                    <div class="trust-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>High Performance</h3>
-                    <p>Speed is a feature. We optimize every layer for seamless user interactions across all devices.</p>
+                <div class="service-card">
+                    <div class="service-image" style="background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);"></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive user interfaces and engaging user experience design for digital products.</p>
+                    <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="trust-card">
-                    <div class="trust-icon">
-                        <i class="fas fa-brain"></i>
+                <div class="service-card">
+                    <div class="service-image" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);"></div>
+                    <h3>Branding</h3>
+                    <p>Complete brand identity and positioning strategies for memorable brand experiences.</p>
+                    <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background: linear-gradient(135deg, #334155 0%, #475569 100%);"></div>
+                    <h3>3D Solutions</h3>
+                    <p>Next-gen 3D visualizations and interactive designs that bring your vision to life.</p>
+                    <a href="services.html" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" style="background: var(--dark-secondary);">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
                     </div>
-                    <h3>Human-Centric UX</h3>
-                    <p>We leverage cognitive psychology to design interfaces that feel natural and highly satisfying.</p>
+                    <p>"CreativeVanam transformed our digital presence. Our website has doubled in traffic within the first month of launching the new design."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <h4>Alex Kim</h4>
+                            <span>CEO, Tech Innovations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat">
+                        <h3>12+</h3>
+                        <p>Industry Awards</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,12 +260,12 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to evolve your<br><span class="accent">digital footprint</span>?</h2>
-            <p>Join the ranks of high-growth companies that have scaled with CreativeVanam. Let's discuss your next breakthrough.</p>
+            <h2>Ready to Scale Your Brand?</h2>
+            <p>Don't let your competitors get ahead. Let's discuss something interesting about your business.</p>
             
             <div class="cta-buttons">
-                <button class="btn btn-primary">Book Free Consultation</button>
-                <button class="btn btn-secondary">View Our Portfolio</button>
+                <a href="booking.html" class="btn btn-primary">Book Free Consultation</a>
+                <a href="services.html" class="btn btn-secondary">Browse All Services</a>
             </div>
         </div>
     </section>
@@ -240,7 +276,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>CreativeVanam</h3>
-                    <p>A premium digital agency focused on high-conversion design and strategy innovation for ambitious brands.</p>
+                    <p>Transforming digital vision into impactful digital solutions through strategy and innovation.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -249,19 +285,29 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Agency</h4>
+                    <h4>Navigation</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Book Session</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Legal</h4>
+                    <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="services.html">Website Design</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Branding</a></li>
+                        <li><a href="services.html">Web Redesign</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@creativeanam.com">hello@creativeanam.com</a></li>
+                        <li><a href="#">Bangalore, India</a></li>
+                        <li><a href="contact.html">Contact Form</a></li>
                     </ul>
                 </div>
             </div>
