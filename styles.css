@@ -257,10 +257,12 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
-.dashboard-graphic {
+.hero-illustration {
     width: 100%;
-    max-width: 400px;
-    filter: drop-shadow(0 20px 40px rgba(34, 197, 94, 0.2));
+    max-width: 450px;
+    border-radius: 20px;
+    border: 2px solid var(--dark-tertiary);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes float {
