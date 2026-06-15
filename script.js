@@ -41,31 +41,46 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
+// Intersection Observer for staggered fade-in animations of content elements
+const animateObserverOptions = {
+    threshold: 0.05,
+    rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver((entries) => {
+const animateObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
-            observer.unobserve(entry.target);
+            const children = entry.target.querySelectorAll('.why-item, .service-card, .process-step, .testimonial-card, .stat, .service-detail, .contact-left, .contact-right, .booking-left, .booking-right');
+            children.forEach((child, index) => {
+                child.style.opacity = '0';
+                child.style.animation = `fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.15}s forwards`;
+            });
+            animateObserver.unobserve(entry.target);
         }
     });
-}, observerOptions);
+}, animateObserverOptions);
 
-// Observe sections for animation
+// Observe sections that contain animatable children
 document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-});
-
-// Add scroll animation to cards
-const cards = document.querySelectorAll('.why-card, .trust-card, .team-card');
-cards.forEach((card, index) => {
-    card.style.opacity = '0';
-    card.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s forwards`;
+    const children = section.querySelectorAll('.why-item, .service-card, .process-step, .testimonial-card, .stat, .service-detail, .contact-left, .contact-right, .booking-left, .booking-right');
+    if (children.length > 0) {
+        children.forEach(child => {
+            child.style.opacity = '0';
+        });
+        animateObserver.observe(section);
+    } else {
+        // Fallback: fade in the whole section if it has no animatable children
+        section.style.opacity = '0';
+        const sectionObserver = new IntersectionObserver((secEntries) => {
+            secEntries.forEach(secEntry => {
+                if (secEntry.isIntersecting) {
+                    secEntry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    sectionObserver.unobserve(secEntry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        sectionObserver.observe(section);
+    }
 });
 
 // CTA Button interactions with ripple effect
