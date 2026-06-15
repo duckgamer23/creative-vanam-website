@@ -42,7 +42,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 17, 42, 0.8);
+    background: rgba(11, 19, 38, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--dark-tertiary);
     z-index: 1000;
@@ -894,7 +894,7 @@ body {
 
 /* Footer */
 .footer {
-    background: var(--dark-secondary);
+    background: #0B1326;
     border-top: 1px solid var(--dark-tertiary);
     padding: 60px 0 20px;
 }
